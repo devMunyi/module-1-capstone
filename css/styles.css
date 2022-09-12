@@ -11,7 +11,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* Begin Common CSS */
@@ -19,6 +19,7 @@ body {
   background-color: #d3d3d3;
   font-family: var(--font-lato);
 }
+
 .my-link {
   text-decoration: none;
   color: var(--text-color);
@@ -37,7 +38,7 @@ ul li > a {
 /* End Common CSS */
 
 /* mobile css */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .mycontainer {
     margin: 15px 20px;
   }
@@ -50,7 +51,7 @@ ul li > a {
     display: none;
   }
 
-  .hamburger__bar-item{
+  .hamburger__bar-item {
     width: 40px;
     height: 5px;
     background-color: var(--black-text);
@@ -75,7 +76,7 @@ ul li > a {
   }
 
   .courses {
-    background-color:  rgba(11, 9, 9, 0.678) !important;
+    background-color: rgba(11, 9, 9, 0.678) !important;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -98,7 +99,7 @@ ul li > a {
   .course__item h6 {
     color: red;
     font-weight: bold;
-  } 
+  }
 
   .line-height {
     line-height: 28px;
@@ -127,7 +128,8 @@ ul li > a {
     font-size: 20px;
   }
 
-  .about-footer h3, .about-middle h4 {
+  .about-footer h3,
+  .about-middle h4 {
     text-decoration: underline;
   }
 
@@ -135,6 +137,3 @@ ul li > a {
     background-color: #fff;
   }
 }
-
-
-
