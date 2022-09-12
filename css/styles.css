@@ -1,0 +1,140 @@
+/* Import Lato Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Reusable Variables */
+:root {
+  --bg-color: #fff;
+  --black-text: #000;
+  --font-lato: 'Lato', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+/* Begin Common CSS */
+body {
+  background-color: #d3d3d3;
+  font-family: var(--font-lato);
+}
+.my-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* End Common CSS */
+
+/* mobile css */
+@media screen and (max-width: 768px){
+  .mycontainer {
+    margin: 15px 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mynav {
+    display: none;
+  }
+
+  .hamburger__bar-item{
+    width: 40px;
+    height: 5px;
+    background-color: var(--black-text);
+    margin: 6px 0;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* #headline {
+    background: url("../img/web_dev.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+  } */
+
+  .headline .description {
+    border: 2px solid silver;
+  }
+
+  .courses {
+    background-color:  rgba(11, 9, 9, 0.678) !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: bold;
+  }
+
+  .course__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 60%;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 24px;
+    background-color: rgba(194, 188, 188, 0.233) !important;
+    margin: 10px;
+  }
+
+  .course__item h6 {
+    color: red;
+    font-weight: bold;
+  } 
+
+  .line-height {
+    line-height: 28px;
+  }
+
+  .about-middle {
+    background-color: #fff;
+    margin: 0 !important;
+  }
+
+  .about-footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .about-footer {
+    color: #fff;
+    background-color: rgba(11, 9, 9, 0.678) !important;
+    padding: 50px 0;
+  }
+
+  .about-footer--item {
+    font-size: 20px;
+  }
+
+  .about-footer h3, .about-middle h4 {
+    text-decoration: underline;
+  }
+
+  .rights {
+    background-color: #fff;
+  }
+}
+
+
+
