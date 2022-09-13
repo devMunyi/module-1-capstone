@@ -15,8 +15,8 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container-fluid mycontainer">
-      <div class="menu">
+    <header class="site-header">
+      <div class="mobile-menu">
         <!-- Mobile Menu Icon -->
         <div class="hamburger__bar cursor-pointer">
           <div class="hamburger__bar-item hamburger__bar-item--1"></div>
@@ -33,90 +33,102 @@
           <li class="mynav__item">
             <a class="mynav__item-link" href="about.html">About</a>
           </li>
-          <!-- <li class="mynav__item">
+          <li class="mynav__item">
             <a class="mynav__item-link" href="#contact">Contact</a>
-          </li> -->
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Headline Section -->
     <section class="mycontainer" id="headline">
-      <div class="headline container pt-5 line-height">
-        <h3>Web Development Made Easy</h3>
-        <p>
-          "Welcome to <a href="#"> WebDevEasy.com!</a> Learning Web Development
-          Basics and Learn it Well!"
-        </p>
+      <div
+        class="headline container pt-5 line-height d-grid flex-column align-items"
+      >
+        <h3 class="red-bold animate-fs">WElCOME MORNING DUE GUEST ROOMS</h3>
+        <p class="red-bold">"There is only one boss. The Guest!"</p>
 
         <div class="mt-4 p-5 mb-3 description rounded line-height">
           <p>
-            WebDevEasy, is an online platform featuring various web developemnt
-            courses to help you learn quickly and build your next dream project.
-            Enroll today for free!
+            All our guestrooms are elegantly furnished with handmade furniture
+            include luxury en-suite facilities with complimentary amenities
+            pack, flat screen LCD TV, tea/coffee making facilities, fan,
+            hairdryer and the finest pure white linen and towels.
           </p>
         </div>
 
-        <h3>LET'S CONNECT</h3>
-        <p>@easydev.co.ke</p>
+        <h3>CONTACT US TODAY</h3>
+        <p>morningdue@gmail.com</p>
       </div>
     </section>
 
     <section class="mycontainer" id="popular-courses">
       <div class="courses pt-5 pb-5">
-        <h3 class="text-center font-bold">Popular Courses</h3>
+        <h3 class="text-center font-bold">Facilities</h3>
+        <div class="guide_bar"></div>
         <ul class="course__container">
-          <li class="course__item course__item-1">
-            <img src="html.png" alt="HTML Course" />
-            <h6>HTML</h6>
+          <li class="course__item course__item-3">
+            <img src="./img/parking.png" alt="Parking" width="100" height="100" />
+            <h6>Parking</h6>
             <span
-              >HTML is the standard markup language for Web pages. With HTML you
-              can create your own Website. HTML is easy to learn - You will
-              enjoy it!</span
-            >
+              >Upon booking a room, the client can book also a parking space.
+              The booking of a parking space provides unlimited access to the
+              car park during the stay.
+            </span>
           </li>
           <li class="course__item course__item-2">
-            <img src="css.png" alt="CSS Course" />
-            <h6>CSS</h6>
+            <img src="./img/cctv.png" alt="CCTV" width="100" height="100"/>
+            <h6>CCTV Cameras</h6>
             <span
-              >CSS is the language we use to style an HTML document. CSS
-              describes how HTML elements should be displayed. This course will
-              teach you CSS from basic to advanced.</span
+              >CCTV security cameras keep both you and your guests safe in your
+              hotel. The presence of security cameras alone will reduce the risk
+              for things like theft and other illegal activities.</span
             >
           </li>
-          <li class="course__item course__item-3">
-            <img src="js.png" alt="JavaScript Course" />
-            <h6>JavaScript</h6>
+          <li class="course__item course__item-1">
+            <img src="./img/wifi.png" alt="WIFI"  width="100" height="100"/>
+            <h6>WIFI</h6>
             <span
-              >JavaScript is the world's most popular programming language.
-              JavaScript is the programming language of the Web. JavaScript is
-              easy to learn. This course will teach you JavaScript from basic to
-              advanced.</span
-            >
-          </li>
-          <li class="course__item course__item-4">
-            <img src="ruby.png" alt="Ruby Course" />
-            <h6>Ruby</h6>
-            <span
-              >Ruby is an interpreted, high-level, general-purpose programming
-              language which supports multiple programming paradigms. It was
-              designed with an emphasis on programming productivity and
-              simplicity. This course will teach you Ruby from basic to
-              advanced</span
+              >Free and fast WiFi access to help our customers to stay connected
+              and productive while they are at our premises, so they will want
+              to stay longer.!</span
             >
           </li>
           <li class="course__item course__item-5">
-            <img src="sql.png" alt="SQL Course" />
-            <h6>SQL</h6>
+            <img src="./img/food-and-beverage.png" alt="Food and Beverage" width="100" height="100"/>
+            <h6>Food & Beverages</h6>
             <span
-              >SQL is a standard language for storing, manipulating and
-              retrieving data in databases. Our SQL course will teach you how to
-              use SQL in MySQL and Postgres.</span
+              >Most guests that want to eat in their room do so because it's
+              convenient or because it's luxurious and relaxing. Our Food and
+              Beverages Department offer quality drinks and food at customers'
+              request.</span
+            >
+          </li>
+          <li class="course__item course__item-4">
+            <img src="./img/smart-tv.png" alt="Smart TV" width="100" height="100"/>
+            <h6>Smart TV</h6>
+            <span
+              >Our hospitality TV’s provide a wide variety of entertainment as
+              well as allowing guests to take control and stream any content
+              they would like via media devices such as Chromecast, giving them
+              a completely personalised experience</span
             >
           </li>
         </ul>
         <div class="d-grid mx-5">
-          <button type="button" class="btn btn-danger btn-block font-20">Enroll</button>
+          <button type="button" class="btn btn-danger btn-block font-20">
+            Enquire
+          </button>
         </div>
+        <div class="see-more">
+          <a href="javascript:void(0)">View More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms">
+      <div class="row rooms">
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
       </div>
     </section>
 
