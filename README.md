@@ -6,7 +6,7 @@
 customers.
 > It is based on Responsive Web Design (RWD) to suit both mobile and desktop screen sizes.
 
-## [Live Demo](https://devmunyi.github.io/Portfolio/)
+## [Live Demo](https://devmunyi.github.io/module-1-capstone/)
 
 
 ## Built With
@@ -53,7 +53,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code, images and icons were used in developing the project including:
-- [stackoverflow](https://stackoverflow.com/)
+- [Stackoverflow](https://stackoverflow.com/)
 - [Cindy Shin](https://www.behance.net/adagio07)
 - [Flaticon](https://www.flaticon.com/)
 - [Pixabay](https://pixabay.com/)
