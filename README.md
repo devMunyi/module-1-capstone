@@ -61,4 +61,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/devMunyi/module-1-capstone/blob/create_mobile_and_desktop_version/MIT.md) licensed.
