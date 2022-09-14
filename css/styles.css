@@ -256,26 +256,21 @@ p {
 }
 
 .about-middle .col-md-6 {
-  position: relative;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  background-color: transparent;
-  opacity: 0.7;
-  transition: opacity 0.5s ease-in;
-  cursor: pointer;
-}
-
-.about-middle .col-md-6:hover {
-  opacity: 1;
-  color: white;
+  background-image: linear-gradient(180.45deg, rgba(182, 175, 175, 0) 2.75%, rgba(246, 242, 242, 0.9) 15%), url("../img/room-1.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about-middle .img-centered-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(247, 247, 248);
+  margin: 15px 0 40px;
+  line-height: 220%;
+  padding: 10px 25px 0;
+  font-size: 1.125em;
 }
 
 /* Adapt to Desktop */
