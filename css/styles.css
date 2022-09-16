@@ -675,3 +675,7 @@ p {
 .enquire-btn:hover {
   background-color: #ed2416;
 }
+
+.rooms .title {
+  margin-top: 50px;
+}
