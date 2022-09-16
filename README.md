@@ -5,6 +5,7 @@
 > A website of Morning Due Hotel that shows amenities and services available to their
 customers.
 > It is based on Responsive Web Design (RWD) to suit both mobile and desktop screen sizes.
+> [Loom Recording](https://www.loom.com/share/5b9a9a8087b843778c7277f015f24ede/)
 
 ## [Live Demo](https://devmunyi.github.io/module-1-capstone/)
 
