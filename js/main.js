@@ -22,7 +22,7 @@ const rooms = [
     imageUrl: './img/room-2.jpg',
     name: 'MD Capital 15959',
     type: 'Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 
   {
@@ -30,7 +30,7 @@ const rooms = [
     imageUrl: './img/room-1.jpg',
     name: 'MD Flagship 75243',
     type: 'Non-Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 
   {
@@ -38,7 +38,7 @@ const rooms = [
     imageUrl: './img/room-3.jpg',
     name: 'MD FLAGSHIP 76687',
     type: 'Non-Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 
   {
@@ -46,7 +46,7 @@ const rooms = [
     imageUrl: './img/room-4.jpg',
     name: 'MD SPOT 37669',
     type: 'Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 
   {
@@ -54,7 +54,7 @@ const rooms = [
     imageUrl: './img/room-5.jpg',
     name: 'MD 80211 Collection',
     type: 'Non-Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 
   {
@@ -62,7 +62,7 @@ const rooms = [
     imageUrl: './img/room-6.jpg',
     name: 'MD Flagship 82898',
     type: 'Delux',
-    desc: 'Night Curfew in Nairobi | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
+    desc: 'Night Curfew in Kinamba | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof.',
   },
 ];
 
