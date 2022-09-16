@@ -388,43 +388,6 @@ p {
     grid-template-rows: auto;
     grid-gap: 15px;
   }
-
-  /* .room-img {
-  float: none;
-  margin-right: 30px;
-} */
-
-  /* .room-name {
-  font-size: 22px;
-    text-align: left;
-    vertical-align: bottom;
-    margin-top: 2px;
-} */
-
-  /* .room-type {
-  font-size: 13px;
-  color: rgb(255, 79, 56);
-  text-align: left;
-} */
-
-  /*
-.room-desc {
-  word-break: keep-all;
-    text-align: left;
-    font-size: 0.875em;
-    padding-right: 1em;
-    line-height: 24px;
-} */
-
-  /* .room {
-  display: flex;
-} */
-
-  /* .guide-line {
-  width: 24px;
-  margin-bottom: 10px;
-  border-top: 2px solid rgba(78, 75, 75, 0.322);
-} */
 }
 
 #rooms-container .row {
@@ -493,6 +456,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 1.875em;
+  margin-top: 50px;
 }
 
 .headline .description {
@@ -674,8 +638,4 @@ p {
 
 .enquire-btn:hover {
   background-color: #ed2416;
-}
-
-.rooms .title {
-  margin-top: 50px;
 }
