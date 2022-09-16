@@ -1,14 +1,15 @@
 /* Import Lato Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
 /* Reusable Variables */
 :root {
   --bg-color: #fff;
   --black-text: #000;
-  --font-lato: 'Lato', sans-serif;
+  --font-family: 'Nanum Gothic', 'Lato', sans-serif;
   --body-bg: #d3d3d3;
   --red-bg: #ef513c;
-  --red-text: #ef513c;
+  --red-text: #ed2416;
 }
 
 * {
@@ -19,8 +20,7 @@
 
 /* Begin Common CSS */
 body {
-  /* background-color: var(--body-bg); */
-  font-family: var(--font-lato);
+  font-family: var(--font-family);
   color: rgb(51, 51, 51);
 }
 
@@ -80,37 +80,38 @@ a:hover {
   margin-top: 10px;
 }
 
-.headline .description {
-  border: 2px solid silver;
-}
-
-.facility {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-weight: bold;
+.wrap-facilities {
   background-image: url("../img/pattern_bg.png");
   background-repeat: repeat;
   background-color: rgb(39, 42, 50);
 }
 
-.facility__item {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 60%;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  align-items: center;
-  font-size: 12px;
-  line-height: 24px;
-  background-color: rgba(194, 188, 188, 0.233) !important;
-  margin: 10px;
-  padding: 10px;
+.facilities {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  /* font-weight: bold; */
 }
 
-.facility__item h6 {
-  color: red;
-  font-weight: bold;
+.facility__item {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 50%;
+  grid-template-rows: auto;
+  align-items: center;
+  background-color: rgba(194, 188, 188, 0.233) !important;
+  margin: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.facility-description {
+  word-break: keep-all;
+  color: #fff;
+  font-size: 0.813em;
+  padding: 0 17px;
+  line-height: 1.5em;
 }
 
 .red-bold {
@@ -147,14 +148,22 @@ a:hover {
 
 .rights {
   background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  height: 200px;
+  flex-wrap: wrap;
+  word-break: keep-all;
 }
 
 .headline h3,
 p {
   word-spacing: 5px;
+  word-break: keep-all;
 }
 
-.facility h3 {
+.facilities h3 {
   margin-bottom: 0;
 }
 
@@ -171,6 +180,77 @@ p {
 
 .animate-fs {
   animation: zoom-text 0.5s;
+}
+
+.about-title {
+  font-size: 50px;
+}
+
+.about-quote {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ef7f3c;
+}
+
+.review-img {
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(306deg) saturate(550%) contrast(1);
+  opacity: 0.8;
+
+  /* background-color: rgba(236, 82, 66, 1);
+  background-blend-mode: multiply */
+}
+
+.rooms {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.wrap-rooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+.room-img {
+  float: none;
+  margin-right: 30px;
+}
+
+.room-name {
+  font-size: 22px;
+  text-align: left;
+  vertical-align: bottom;
+  margin-top: 2px;
+}
+
+.room-type {
+  font-size: 13px;
+  color: rgb(255, 79, 56);
+  text-align: left;
+}
+
+.room-desc {
+  word-break: keep-all;
+  text-align: left;
+  font-size: 0.875em;
+  padding-right: 1em;
+  line-height: 24px;
+}
+
+.room {
+  display: flex;
+}
+
+.guide-line {
+  width: 24px;
+  margin-bottom: 10px;
+  border-top: 2px solid rgba(78, 75, 75, 0.322);
 }
 
 /* mobile css */
@@ -194,11 +274,11 @@ p {
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     z-index: 99;
-    width: 100%;
     height: 100%;
-    background: var(--body-bg);
+    width: 85%;
+    background: rgb(39, 42, 50);
+    opacity: 0.95;
 
     /* transition: transform 250ms ease-in-out; */
     display: flex;
@@ -221,6 +301,7 @@ p {
   /* mobile menu nav toggle */
   .open-nav .mynav {
     transform: translateX(0);
+    padding-top: 125px !important;
   }
 
   .open-nav .hamburger__bar-item--1 {
@@ -237,14 +318,113 @@ p {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
-  .see-more {
+  .see-more,
+  .top-menu {
     display: none;
   }
-}
 
-.rooms {
-  margin-top: 100px;
-  margin-bottom: 80px;
+  .open-nav .mynav__container {
+    gap: 0;
+    color: white;
+  }
+
+  .open-nav .hamburger__bar-item {
+    background-color: #fff;
+  }
+
+  .open-nav .mynav__item-link {
+    color: #fff;
+  }
+
+  .open-nav .hamburger__bar {
+    left: 70%;
+  }
+
+  .open-nav .mynav__container:first-child {
+    display: block;
+  }
+
+  .headline {
+    width: 90%;
+  }
+
+  .facility__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr;
+    background-color: rgba(194, 188, 188, 0.233) !important;
+    margin: 10px;
+    height: auto;
+    padding-left: 5px;
+  }
+
+  .facility-description {
+    word-break: keep-all;
+    color: rgb(255, 255, 255);
+    font-size: 0.813em;
+    padding: 0 17px;
+    line-height: 1.5em;
+  }
+
+  .facility-title {
+    text-align: center;
+    color: rgb(239, 81, 60);
+    font-size: 14px;
+    line-height: 52px;
+    font-weight: bold;
+  }
+
+  .about-middle .col-md-6 {
+    margin-bottom: 10px !important;
+  }
+
+  .rooms {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .wrap-rooms {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+  }
+
+  /* .room-img {
+  float: none;
+  margin-right: 30px;
+} */
+
+  /* .room-name {
+  font-size: 22px;
+    text-align: left;
+    vertical-align: bottom;
+    margin-top: 2px;
+} */
+
+  /* .room-type {
+  font-size: 13px;
+  color: rgb(255, 79, 56);
+  text-align: left;
+} */
+
+  /*
+.room-desc {
+  word-break: keep-all;
+    text-align: left;
+    font-size: 0.875em;
+    padding-right: 1em;
+    line-height: 24px;
+} */
+
+  /* .room {
+  display: flex;
+} */
+
+  /* .guide-line {
+  width: 24px;
+  margin-bottom: 10px;
+  border-top: 2px solid rgba(78, 75, 75, 0.322);
+} */
 }
 
 #rooms-container .row {
@@ -256,35 +436,98 @@ p {
 }
 
 .about-middle .col-md-6 {
-  background-image: linear-gradient(180.45deg, rgba(182, 175, 175, 0) 2.75%, rgba(246, 242, 242, 0.9) 15%), url("../img/room-1.avif");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.about-middle .img-centered-text {
-  border: 4px solid rgb(255, 255, 255);
-  background-color: rgb(247, 247, 248);
+.about-middle .col-md-6:hover {
+  filter: grayscale(100%);
+  z-index: 100;
+  background: transparent;
+}
+
+.img-centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.main-menu {
+  color: rgb(0, 0, 0) !important;
+  height: 80px;
+  line-height: 80px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.welcome h3 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(#f15409, #ed2416);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ef7f3c;
+}
+
+.open-hours {
+  font-weight: 700;
+
+  /* font-family: Verdana; */
+  color: #575757;
+  letter-spacing: -2px;
+}
+
+.location {
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+
+.rooms .title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875em;
+}
+
+.headline .description {
   margin: 15px 0 40px;
-  line-height: 220%;
-  padding: 10px 25px 0;
-  font-size: 1.125em;
+  width: calc(100% - 2.5em);
+  padding: 1em;
+  line-height: 150%;
+  font-size: 14px;
+  height: auto;
+  text-align: justify;
+  word-break: break-all;
+  border: 3px solid #fff;
+}
+
+.about-footer {
+  color: #fff;
+  font-size: 0.875em;
+  background-color: #2e2e2e;
+  line-height: 1.6;
 }
 
 /* Adapt to Desktop */
 
 @media screen and (min-width: 768px) {
-  .site-header {
+  .wrap-main-menu {
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 30%) 0 2px 8px 0;
+    background-color: #fff;
+  }
+
+  .main-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    padding: 15px 20px;
-    font-size: 1.125em;
   }
 
   .mobile-menu .hamburger__bar {
@@ -293,35 +536,43 @@ p {
 
   .mynav__container {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     flex-wrap: wrap;
+
+    /* justify-content: space-around; */
   }
 
   .headline .description {
-    /* width: 631px; */
+    text-align: justify;
+    width: 631px;
     border: 4px solid rgb(255, 255, 255);
     background-color: rgb(247, 247, 248);
     margin: 15px 0 40px;
     line-height: 220%;
     padding: 10px 25px 0;
     font-size: 1.125em;
-    width: 60%;
   }
 
   .facility__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
+  }
 
-    /* grid-gap: 5px; */
+  .facilities {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .facility__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
+  }
+
+  .facility__item:hover {
+    border: 2px solid #fff;
   }
 
   .see-more a {
@@ -329,10 +580,23 @@ p {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    position: relative;
+    padding-bottom: 1px;
     text-decoration: none;
+
+    /* border-bottom: 1px solid rgba(194, 188, 188, 0.233); */
   }
 
-  .facility button {
+  .see-more a::after {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    border-bottom: 2px solid rgba(194, 188, 188, 0.233);
+    content: "";
+  }
+
+  .facilities button {
     display: none;
   }
 
@@ -340,7 +604,8 @@ p {
   .about-description {
     /* width: 631px; */
     border: 4px solid rgb(255, 255, 255);
-    background-color: rgb(247, 247, 248);
+
+    /* background-color: rgb(247, 247, 248); */
     margin: 15px 0 40px;
     line-height: 220%;
     padding: 10px 25px 0;
@@ -350,4 +615,63 @@ p {
   .about {
     background-color: rgb(247, 247, 248) !important;
   }
+
+  .top-menu {
+    height: 36px;
+    background-color: rgb(62, 62, 62);
+    text-align: right;
+    line-height: 36px;
+    vertical-align: middle;
+    padding-right: 150px;
+  }
+
+  .top-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 27px;
+  }
+
+  .top-menu ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 0.813em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .mynav__item-link {
+    line-height: 40px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+  }
+
+  .welcome {
+    width: 70%;
+  }
+
+  .welcome h3 {
+    font-size: 75px;
+  }
+
+  .facility-title {
+    color: rgb(239, 81, 60);
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .facility-description {
+    text-align: center;
+  }
+}
+
+.enquire-btn {
+  background-color: rgb(239, 81, 60);
+  padding: 25px 20px;
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.enquire-btn:hover {
+  background-color: #ed2416;
 }
