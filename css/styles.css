@@ -275,8 +275,8 @@ p {
     bottom: 0;
     left: 0;
     z-index: 99;
-    height: 100%;
-    width: 85%;
+    max-height: 50%;
+    width: 100%;
     background: rgb(39, 42, 50);
     opacity: 0.95;
 
@@ -301,7 +301,7 @@ p {
   /* mobile menu nav toggle */
   .open-nav .mynav {
     transform: translateX(0);
-    padding-top: 125px !important;
+    padding-top: 20px !important;
   }
 
   .open-nav .hamburger__bar-item--1 {
@@ -337,7 +337,8 @@ p {
   }
 
   .open-nav .hamburger__bar {
-    left: 70%;
+    left: 80%;
+    padding-top: 1rem;
   }
 
   .open-nav .mynav__container:first-child {
